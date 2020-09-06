@@ -1,7 +1,16 @@
+
 def display():
 	print("Hello from folder01 by Sanjoy pator")
 
 display()
+
+
+#finction Jeherul - folder01
+def JI():
+	print("Hrllo from JI - folder01")
+
+#function call - JI
+JI()
 
 
 # function sanjoy - folder01

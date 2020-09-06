@@ -1,12 +1,21 @@
+
 def display():
 	print("Hello from folder02 by Sanjoy pator")
+
+display()
+  
+  
+#finction Jeherul - folder02
+def JI():
+	print("Hrllo from JI - folder02")
+  
+#function call - JI
+JI()
 
 
 #Dikshita Sarmah
 def dikshita():
 	print("Hello from folder02 by Dikshita Sarmah")
-
-display()
 
 #Dikshita Sarmah
 dikshita()
