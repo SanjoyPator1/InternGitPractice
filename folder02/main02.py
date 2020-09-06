@@ -3,6 +3,13 @@ def display():
 	print("Hello from folder02 by Sanjoy pator")
 
 display()
+
+# function pretty 
+def pretty():
+      print("Hello pretty - folder02")
+    
+#calling pretty function
+pretty()
  
 #edited by rhythm
 def Rhythm():
@@ -33,3 +40,4 @@ def sanjoy():
 # sanjoy function - by Sanjoy pator
 sanjoy()
     
+

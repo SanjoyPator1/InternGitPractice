@@ -1,9 +1,16 @@
 
 def display():
 	print("Hello from folder01 by Sanjoy pator")
+
+display()  
   
-display()
-  
+#function pretty = folder04
+def pretty():
+   print("Hello Pretty - folder01")
+
+#calling pretty function
+pretty()
+
 #edited by RHYTHM
 def Rhythm()
      print("RHythm -folder1")
