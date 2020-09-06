@@ -1,9 +1,14 @@
 
 def display():
 	print("Hello from folder01 by Sanjoy pator")
-
+  
 display()
+  
+#edited by RHYTHM
+def Rhythm()
+     print("RHythm -folder1")
 
+Rhythm()
 
 #finction Jeherul - folder01
 def JI():
@@ -27,7 +32,4 @@ def dikshita():
 
 #Dikshita Sarmah
 dikshita()
-
-
-
 

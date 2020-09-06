@@ -3,8 +3,13 @@ def display():
 	print("Hello from folder02 by Sanjoy pator")
 
 display()
-  
-  
+ 
+#edited by rhythm
+def Rhythm():
+     print("hello - from2")
+
+Rhythm()
+    
 #finction Jeherul - folder02
 def JI():
 	print("Hrllo from JI - folder02")
@@ -28,4 +33,3 @@ def sanjoy():
 # sanjoy function - by Sanjoy pator
 sanjoy()
     
-
