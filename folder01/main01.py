@@ -12,7 +12,7 @@ def pretty():
 pretty()
 
 #edited by RHYTHM
-def Rhythm()
+def Rhythm():
      print("RHythm -folder1")
 
 Rhythm()
