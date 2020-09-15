@@ -69,5 +69,208 @@
          "responses": ["Loading hospital details"],
          "context": [""]
         }
+
+
+
+	{"tag": "ml",
+         "patterns": ["defnition of machine learning", "what do you mean by ml", "what is the meaning of ml","machine learning","ml"],
+         "responses": ["Machine learning is a branch of computer science which deals with system programming in order to automatically learn and improve with experience. For example: Robots are programmed so that they can perform the task based on data they gather from sensors. It automatically learns programs from data."],
+         "context": [""]
+        },
+	{"tag": "difference between Data Mining and Machine learning",
+         "patterns": ["difference between Data Mining and Machine learning", "machine learning and data mining","distinguish between Data Mining and ML"],
+         "responses": ["Machine learning relates with the study, design and development of the algorithms that give computers the capability to learn without being explicitly programmed. While, data mining can be defined as the process in which the unstructured data tries to extract knowledge or unknown interesting patterns. During this process machine, learning algorithms are used."],
+         "context": [""]
+        },
+	{"tag": "Overfitting",
+         "patterns": ["defnition of Overfitting", "what do you mean by Overfitting", "what is the meaning of Overfitting","Overfitting","Overfitting in Machine learning"],
+         "responses": ["In machine learning, when a statistical model describes random error or noise instead of underlying relationship overfitting occurs. When a model is excessively complex, overfitting is normally observed, because of having too many parameters with respect to the number of training data types. The model exhibits poor performance which has been overfit."],
+         "context": [""]
+        },
+	{"tag": "Why overfitting happens",
+         "patterns": ["Why overfitting happens","possibility of overfitting"],
+         "responses": ["The possibility of overfitting exists as the criteria used for training the model is not the same as the criteria used to judge the efficacy of a model."],
+         "context": [""]
+        },
+	{"tag": "avoid overfitting",
+         "patterns": ["avoid overfitting","how to avoid overfitting","cross validation technique","idea of cross validation"],
+         "responses": ["By using a lot of data overfitting can be avoided, overfitting happens relatively as we have a small dataset, and we try to learn from it. But if we have a small database and we are forced to come with a model based on that. In such situation, we can use a technique known as cross validation. In this method the dataset splits into two section, testing and training datasets, the testing dataset will only test the model while, in training dataset, the datapoints will come up with the model. In this technique, a model is usually given a dataset of a known data on which training (training data set) is run and a dataset of unknown data against which the model is tested. The idea of cross validation is to define a dataset to “test” the model in the training phase."],
+         "context": [""]
+        },
+	{"tag": "inductive machine learning",
+         "patterns": ["defnition of inductive machine learning", "what do you mean by inductive ml", "what is the meaning of inductive ml","inductive machine learning"],
+         "responses": ["The inductive machine learning involves the process of learning by examples, where a system, from a set of observed instances tries to induce a general rule."],
+         "context": [""]
+        },
+	{"tag": "algorithms of Machine Learning",
+         "patterns": ["different algorithms of Machine Learning", "algorithms of Machine Learning", "list some algorithms of Machine Learning"],
+         "responses": ["Decision Trees,Neural Networks (back propagation),Probabilistic networks,Nearest Neighbour,Support vector machines"],
+         "context": [""]
+        },
+	{"tag": "Algorithm techniques in Machine Learning",
+         "patterns": ["different algorithms techniques of Machine Learning", "algorithms techniques of Machine Learning", "list some algorithms techniques of Machine Learning"],
+         "responses": ["Supervised Learning,Unsupervised Learning,Semi-supervised Learning,Reinforcement Learning,Transduction,Learning to Learn"],
+         "context": [""]
+        },
+	{"tag": "algorithm independent machine learning",
+         "patterns": ["defnition of algorithm independent machine learning", "what do you mean by algorithm independent ml", "what is the meaning of algorithm independent ml","algorithm independent machine learning","algorithm independent ml"],
+         "responses": ["Machine learning in where mathematical foundations is independent of any particular classifier or learning algorithm is referred as algorithm independent machine learning."],
+         "context": [""]
+        },
+	{"tag": "difference between artificial learning and machine learning",
+         "patterns": ["difference between artificial learning and machine learning", "artificial learning and machine learning","distinguish between artificial learning and ml"],
+         "responses": ["Designing and developing algorithms according to the behaviours based on empirical data are known as Machine Learning. While artificial intelligence in addition to machine learning, it also covers other aspects like knowledge representation, natural language processing, planning, robotics etc."],
+         "context": [""]
+        },
+	{"tag": "classifier in machine learning",
+         "patterns": ["defnition of classifier in machine learning", "what do you mean by classifier in ml", "what is the meaning of classifier in ml","classifier in ml"],
+         "responses": ["A classifier in a Machine Learning is a system that inputs a vector of discrete or continuous feature values and outputs a single discrete value, the class."],
+         "context": [""]
+        },
+	{"tag": "Model Selection in Machine Learning",
+         "patterns": ["defnition of Model Selection in Machine Learning", "what do you mean by Model Selection in ML", "what is the meaning of Model Selection in Machine Learning","Model Selection in ML"],
+         "responses": ["The process of selecting models among different mathematical models, which are used to describe the same data set is known as Model Selection. Model selection is applied to the fields of statistics, machine learning and data mining."],
+         "context": [""]
+        },
+	{"tag": "various approaches for machine learning",
+         "patterns": ["different approaches for machine learning", "approaches for machine learning", "list some approaches for ml"],
+         "responses": ["Concept Vs Classification Learning,Symbolic Vs Statistical Learning,Inductive Vs Analytical Learning"],
+         "context": [""]
+        },
+	{"tag": "dimension reduction in machine learning",
+         "patterns": ["defnition of dimension reduction in machine learning", "what do you mean by dimension reduction in ml", "dimension reduction in machine learning","explain dimension reduction in machine learning","process of reducing the size of the feature matrix"],
+         "responses": ["Dimension Reduction is the process of reducing the size of the feature matrix. We try to reduce the number of columns so that we get a better feature set either by combining columns or by removing extra variables."],
+         "context": [""]
+        },
+	{"tag": "Inductive Logic Programming in Machine Learning",
+         "patterns": ["defnition of Inductive Logic Programming in Machine Learning", "what do you mean by Inductive Logic Programming in ML", "Inductive Logic Programming in Machine Learning","explain Inductive Logic Programming in Machine Learning"],
+         "responses": ["Inductive Logic Programming (ILP) is a subfield of machine learning which uses logical programming representing background knowledge and examples."],
+         "context": [""]
+        },
+	{"tag": "unsupervised learning",
+         "patterns": ["defnition of unsupervised learning", "what do you mean by unsupervised learning", "what is the meaning of unsupervised learning","unsupervised learning"],
+         "responses": ["Unsupervised Learning is a machine learning technique in which the users do not need to supervise the model. Instead, it allows the model to work on its own to discover patterns and information that was previously undetected. It mainly deals with the unlabelled data."],
+         "context": [""]
+        },
+	{"tag": "example of unsupervised learning algorithm",
+         "patterns": ["example of unsupervised learning algorithm", "give an example of unsupervised learning algorithm", "provide an example of unsupervised learning algorithm"],
+         "responses": ["Let's, take the case of a baby and her family dog. She knows and identifies this dog. Few weeks later a family friend brings along a dog and tries to play with the baby. Baby has not seen this dog earlier. But it recognizes many features (2 ears, eyes, walking on 4 legs) are like her pet dog. She identifies the new animal as a dog. This is unsupervised learning, where you are not taught but you learn from the data (in this case data about a dog.) Had this been supervised learning, the family friend would have told the baby that it's a dog."],
+         "context": [""]
+        },
+	{"tag": "use of unsupervised learning",
+         "patterns": ["use of unsupervised learning", "what is the use of unsupervised learning", "how can we use unsupervised learning"],
+         "responses": ["1) Unsupervised machine learning finds all kind of unknown patterns in data. 2) Unsupervised methods help you to find features which can be useful for categorization. 3) It is taken place in real time, so all the input data to be analyzed and labeled in the presence of learners. 4) It is easier to get unlabeled data from a computer than labeled data, which needs manual intervention."],
+         "context": [""]
+        },
+	{"tag": "types of unsupervised learning",
+         "patterns": ["types of unsupervised learning", "what are types of unsupervised learning", "kinds of unsupervised learning"],
+         "responses": ["Clustering and Association are the two types of Unsupervised learning."],
+         "context": [""]
+        },
+	{"tag": "different types of Learning/ Training models in ML",
+         "patterns": ["types of learning models in ml", "what are types of Training models in ML", "different types of Learning/ Training models in ML"],
+         "responses": ["ML algorithms can be primarily classified depending on the presence/absence of target variables. 1)Supervised learning: [Target is present] 2)Unsupervised learning: [Target is absent] 3)Reinforcement Learning"],
+         "context": [""]
+        },
+	{"tag": "differences between supervised and unsupervised machine learning",
+         "patterns": ["differences between supervised and unsupervised machine learning", "what are differences between supervised and unsupervised ml", "differentiate supervised and unsupervised machine learning","How is supervised learning different from unsupervised learning"],
+         "responses": ["In supervised learning, Algorithms are trained using labeled data whereas in unsupervised learning Algorithms are used against data which is not labelled. Supervised learning is a simpler method. Unsupervised learning is computationally complex. Supervised learning is Highly accurate and trustworthy method whereas unsupervised learning is Less accurate and trustworthy method."],
+         "context": [""]
+        },
+	{"tag": "differences between KNN and K-means clustering",
+         "patterns": ["differences between KNN and K-means clustering", "what are differences between KNN and K-means clustering", "differentiate KNN and K-means clustering","How is KNN different from K-means clustering"],
+         "responses": ["K-Nearest Neighbor is Supervised technique whereas K-Means Neighbor is Unsupervised technique. KNN is Used for classification and regression whereas K-means is Used for clustering. ‘K’ in KNN represents the number of nearest neighbors used to classify or predict in case of continuous variable/regression. ‘K’ in K-Means represents the number of clusters the algorithm is trying to identify or learn from the data."],
+         "context": [""]
+        },
+	{"tag": "unsupervised learning algorithms",
+         "patterns": ["what are unsupervised learning algorithms", "what do you mean by unsupervised learning algorithms", "what is the meaning of unsupervised learning algorithms","unsupervised learning algorithms"],
+         "responses": ["Unsupervised Learning Algorithms allow users to perform more complex processing tasks compared to supervised learning. Unsupervised learning can be more unpredictable compared with other natural learning methods. Unsupervised learning algorithms include clustering, anomaly detection, neural networks, etc."],
+         "context": [""]
+        },
+	{"tag": "applications of unsupervised machine learning",
+         "patterns": ["what are the applications of unsupervised machine learning", "list some applications of unsupervised machine learning", "applications of unsupervised machine learning","suggest some applications of unsupervised machine learning"],
+         "responses": ["Some applications of unsupervised machine learning techniques are: 1) Clustering automatically split the dataset into groups base on their similarities. 2) Anomaly detection can discover unusual data points in your dataset. It is useful for finding fraudulent transactions. 3) Association mining identifies sets of items which often occur together in your dataset. 4) Latent variable models are widely used for data preprocessing. Like reducing the number of features in a dataset or decomposing the dataset into multiple components"],
+         "context": [""]
+        },
+	{"tag": "disadvantages of unsupervised machine learning",
+         "patterns": ["what are the disadvantages of unsupervised machine learning", "list the disadvantages of unsupervised machine learning", "what are the possible disadvantages of unsupervised machine learning"],
+         "responses": ["Some disadvantages of unsupervised machine learning techniques are: 1) You cannot get precise information regarding data sorting, and the output as data used in unsupervised learning is labeled and not known 2) Less accuracy of the results is because the input data is not known and not labeled by people in advance. This means that the machine requires to do this itself. 3) The spectral classes do not always correspond to informational classes. 4) The user needs to spend time interpreting and label the classes which follow that classification. 5) Spectral properties of classes can also change over time so you can't have the same class information while moving from one image to another"],
+         "context": [""]
+        },
+	{"tag": "clustering",
+         "patterns": ["clustering", "what is clustering", "what do you mean by clustering"],
+         "responses": ["Clustering is an important concept when it comes to unsupervised learning. It mainly deals with finding a structure or pattern in a collection of uncategorized data. Clustering algorithms will process your data and find natural clusters (groups) if they exist in the data. You can also modify how many clusters your algorithms should identify. It allows you to adjust the granularity of these groups"],
+         "context": [""]
+        },
+	{"tag": "association",
+         "patterns": ["association", "what is association", "what do you mean by association"],
+         "responses": ["Association rules allow you to establish associations amongst data objects inside large databases. This unsupervised technique is about discovering interesting relationships between variables in large databases. For example, people that buy a new home most likely to buy new furniture."],
+         "context": [""]
+        },
+	{"tag": "differences between K-Means and Hierarchical clustering",
+         "patterns": ["differences between K-Means and Hierarchical clustering", "what are differences between K-Means and Hierarchical clustering", "differentiate K-Means and Hierarchical clustering","How is K-Means clustering different from Hierarchical clustering"],
+         "responses": ["1) Hierarchical clustering can’t handle big data well but K Means clustering can. This is because the time complexity of K Means is linear i.e. O(n) while that of hierarchical clustering is quadratic i.e. O(n2). 2) In K Means clustering, since we start with random choice of clusters, the results produced by running the algorithm multiple times might differ. While results are reproducible in Hierarchical clustering. 3) K Means is found to work well when the shape of the clusters is hyper spherical (like circle in 2D, sphere in 3D). 4) K Means clustering requires prior knowledge of K i.e. no. of clusters you want to divide your data into. But, you can stop at whatever number of clusters you find appropriate in hierarchical clustering by interpreting the dendrogram"],
+         "context": [""]
+        },
+	{"tag": "Hierarchical clustering",
+         "patterns": ["Hierarchical clustering", "what is Hierarchical clustering", "what do you mean by Hierarchical clustering"],
+         "responses": ["Hierarchical clustering is an algorithm which builds a hierarchy of clusters. It begins with all the data which is assigned to a cluster of their own. Here, two close cluster are going to be in the same cluster. This algorithm ends when there is only one cluster left"],
+         "context": [""]
+        },
+	{"tag": "K-Means clustering",
+         "patterns": ["K-Means clustering", "what is K-Means clustering", "what do you mean by K-Means clustering"],
+         "responses": ["K means it is an iterative clustering algorithm which helps you to find the highest value for every iteration. Initially, the desired number of clusters are selected. In this clustering method, you need to cluster the data points into k groups. A larger k means smaller groups with more granularity in the same way. A lower k means larger groups with less granularity. K-mean clustering further defines two subgroups: 1) Agglomerative clustering, 2) Dendrogram"],
+         "context": [""]
+        },
+	{"tag": "agglomerative clustering",
+         "patterns": ["agglomerative clustering", "what is agglomerative clustering", "what do you mean by agglomerative clustering"],
+         "responses": ["This type of K-means clustering starts with a fixed number of clusters. It allocates all data into the exact number of clusters. This clustering method does not require the number of clusters K as an input. Agglomeration process starts by forming each data as a single cluster. This method uses some distance measure, reduces the number of clusters (one in each iteration) by merging process. Lastly, we have one big cluster that contains all the objects."],
+         "context": [""]
+        },
+	{"tag": "dendrogram",
+         "patterns": ["dendrogram", "what is dendrogram", "what do you mean by dendrogram"],
+         "responses": ["In the Dendrogram clustering method, each level will represent a possible cluster. The height of dendrogram shows the level of similarity between two join clusters. The closer to the bottom of the process they are more similar cluster which is finding of the group from dendrogram which is not natural and mostly subjective."],
+         "context": [""]
+        },
+	{"tag": "K-Nearest Neighbors",
+         "patterns": ["K-Nearest Neighbors", "what is K-Nearest Neighbors", "what do you mean by K-Nearest Neighbors"],
+         "responses": ["K- nearest neighbour is the simplest of all machine learning classifiers. It differs from other machine learning techniques, in that it doesn't produce a model. It is a simple algorithm which stores all available cases and classifies new instances based on a similarity measure. It works very well when there is a distance between examples. The learning speed is slow when the training set is large, and the distance calculation is nontrivial."],
+         "context": [""]
+        },
+	{"tag": "clustering methods",
+         "patterns": ["what are clustering methods", "what are the uses of clustering methods", "how clustering methods are used"],
+         "responses": ["Clustering methods are used to identify groups of similar objects in a multivariate data sets collected from fields such as marketing, bio-medical and geo-spatial."],
+         "context": [""]
+        },
+	{"tag": "unsupervised learning work",
+         "patterns": ["how unsupervised learning work", "give the working of unsupervised learning", "explain the working of unsupervised learning"],
+         "responses": ["Unsupervised learning works by analyzing the data without its labels for the hidden structures within it, and through determining the correlations, and for features that actually correlate two data items. It is being used for clustering, dimensionality reduction, feature learning, density estimation, etc."],
+         "context": [""]
+        },
+	{"tag": "need of clustering",
+         "patterns": ["what is the need of clustering", "give the requirement of clustering", "what is the importance of clustering"],
+         "responses": ["Clustering can be considered the most important unsupervised learning problem; so, as every other problem of this kind, it deals with finding a structure in a collection of unlabeled data. A loose definition of clustering could be “the process of organizing objects into groups whose members are similar in some way”."],
+         "context": [""]
+        },
+	{"tag": "good clustering",
+         "patterns": ["what is good clustering", "good clustering", "what do you mean by good clustering"],
+         "responses": ["A good clustering method will produce high quality clusters in which: – the intra-class (that is, intra intra-cluster) similarity is high. – the inter-class similarity is low. The quality of a clustering result also depends on both the similarity measure used by the method and its implementation. The quality of a clustering method is also measured by its ability to discover some or all of the hidden patterns. The quality of a clustering result also depends on the definition and representation of cluster chosen."],
+         "context": [""]
+        },
+	{"tag": "major clustering techniques",
+         "patterns": ["what are the major clustering techniques", "clustering techniques", "mention the major clustering techniques"],
+         "responses": ["Clustering techniques have been studied extensively in: – Statistics, machine learning, and data mining. Clustering methods can be classified into 5 approaches: 1) partitioning algorithms, 2) hierarchical algorithms, 3) density-based, 4) grid-based, 5) model-based method"],
+         "context": [""]
+        },
+	{"tag": "examples of clustering applications",
+         "patterns": ["give some examples of clustering applications", "what are some examples of clustering applications", "examples of clustering applications"],
+         "responses": ["1) Marketing: Help marketers discover distinct groups in their customer bases, and then use this knowledge to develop targeted marketing programs. 2) Land use: Identification of areas of similar land use in an earth observation database. 3) Insurance: Identifying groups of motor insurance policy holders with a high average claim cost. 4) City-planning: Identifying groups of houses according to their house type, value, and geographical location. 5) Earthquake studies: Observed earthquake epicenters should be clustered along continent faults."],
+         "context": [""]
+        },
+	{"tag": "key difference between supervised and unsupervised learning",
+         "patterns": ["key difference between supervised and unsupervised learning", "what is the key difference between supervised and unsupervised learning","Significant point of difference between supervised and unsupervised learning in ml"],
+         "responses": ["Supervised learning technique needs labeled data to train the model. For example, to solve a classification problem (a supervised learning task), you need to have label data to train the model and to classify the data into your labeled groups. Unsupervised learning does not need any labelled dataset. This is the main key difference between supervised learning and unsupervised learning."],
+         "context": [""]
+        }
    ]
 }
