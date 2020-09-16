@@ -1,0 +1,171 @@
+{
+	"intents": [
+		{
+			"tag": "applications",
+			"patterns": [
+				"what are the applications of machine learning",
+				"Mention some applications of machine leraning",
+				"some applications of machine learning"
+			],
+			"responses": [
+				"following are some applications of machine learning: 1.Traffic Alerts 2.Social Media 3.Transportation and Commuting 4.Products Recommendations 5.Virtual Personal Assistants 6.Self Driving Cars 7.Dynamic Pricing 8.Google Translate 9.Online Video Streaming 10.Fraud Detection"
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "working of GMaps",
+			"patterns": [
+				"How Machine Learning works in Google Maps",
+				"How does machine learning helps in Google Maps",
+				"How does machine Learning plays an important role in Google Maps",
+				"what is the role played by Machine Learning in finding routes and traffics in Google maps"
+			],
+			"responses": [
+				"Imagery and authoritative data are static and can’t keep up with the ever-changing   world around us. Machine Learning algorithms can analyze existing images and data and identify changes in the new data. Thus, the maps are updated with only the recent changes. It makes use of a deep neural network that automates the image information reading process. This algorithm is publicly available on GitHub through TensorFlow. Google is already implementing machine learning to identify car license plates. And now, it is using the same technology to fetch information from street signs. Using this technology, Google aims to improve the location data of about one-third of the world’s addresses."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Friend Tag suggestion",
+			"patterns": [
+				"How facebook's automatic fried tagging suggestion works",
+				"how does machine learning helps in facebook's automatic friend tagging suggestion mechanism",
+				"Explain the role of machine leraning in facebook's friend tagging suggestion"
+			],
+			"responses": [
+				"Facebook uses face detection and Image recognition to automatically find the face of the person which matches its Database and hence suggests us to tag that person based on DeepFace. Facebook’s Deep Learning project DeepFace is responsible for the recognition of faces and identifying which person is in the picture. It also provides Alt Tags (Alternative Tags) to images already uploaded on Facebook."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Terms",
+			"patterns": [
+				"some terminologies related to machine learning",
+				"Mention some common phrases used in the studies of machine learning",
+				"tell me some common terms related to machine learning"
+			],
+			"responses": [
+				"1.Artificial Intelligence: Artificial intelligence is a field of computer science which makes a computer system that can mimic human intelligence. It is comprised of two words Artificial and intelligence, which means a human-made thinking power. The Artificial intelligence system use such algorithms which can work with their own intelligence. It involves machine learning algorithms such as Reinforcement learning algorithm and deep learning neural networks. AI is being used in multiple places such as Siri, Google's AlphaGo, AI in Chess playing, etc. Artificial Intelligence applies machine learning, deep learning and other techniques to solve actual problems. 2.Neural Network:A neural network is a kind of machine learning inspired by the workings of the human brain. It’s a computing system made up of interconnected units (like neurons) that processes information by responding to external inputs, relaying information between each unit. The process requires multiple passes at the data to find connections and derive meaning from undefined data. 3.Deep Learning:  Deep Learning uses huge neural networks with many layers of processing units, taking advantage of advances in computing power and improved training techniques to learn complex patterns in large amounts of data. Common applications include image and speech recognition. 4.NLP:  NLP stands for Natural Language Processing, it is the ability of computers to analyze, understand and generate human language, including speech. The next stage of NLP is natural language interaction, which allows humans to communicate with computers using normal, everyday language to perform tasks."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "ETA Prediction",
+			"patterns": [
+				"How machine learning helps in ETA prediction",
+				"How ETA Prediction is done using ML",
+				"Role of machine learning in calculation of  estimated time of arrival prediction"
+			],
+			"responses": [
+				"ETA (Estimated Time of Arrival) prediction is an appealing feature commonly used in logistics company for an enhanced customer experience. Considering a food delivery service provider, predicting food delivery ETA needs a lot of calculations at the backend, for e.g.: Food preparation time (based on its complexity), how busy the restaurant is at that time, etc. So, the ML model needs to calculate the end-to-end delivery time taking into consideration amount of time taken at each stage. A combination of linear regression, random forest, long-short-term-memory (LSTM) and assembling techniques are deployed for optimal prediction results."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Role of machine learning in voice assistants",
+			"patterns": [
+				"How machine learning helps in building a voice assistant or a chatbot",
+				"Explain the role of machine learning in creating a voice assistant",
+				"what is the role of machine learning in building a voice assistant"
+			],
+			"responses": [
+				"Speech technology is a type of communication technology that enables electronic devices to recognize, analyze and understand spoken word or audio. Subfields of speech technology include speech processing, and its applications like speech recognition, speech verification, Voice Conversion (VC), real-time speech to text conversion, interactive voice response (IVR), speech synthesis and speech analytics. voice assistants recognize speech (the words we say) uses Natural Language Processing (NLP), convert them into numbers using machine learning, and formulate a response accordingly."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Machine Learning in self-driving cars",
+			"patterns": [
+				"How Machine Learning has been used to automate the driving of a car",
+				"How machine Laering helps in building a self-driving car",
+				"What is the role of Machine Learning in a self driving car"
+			],
+			"responses": [
+				"Self-driving cars rely on hardware and software to drive down the road without user input. The hardware collects the data; the software organizes and compiles it. On the software side, the input data will normally be processed through machine learning algorithms or complex lines of code that have been trained in real-world scenarios. Following are some of the algorithms of Machine Learning used in self-driving cars: 1.) Regression algorithms:This algorithm helps in object detection, object localization and predicting movements of the nearby vehicles. It uses the repetitive aspects of an environment to form a statistical model of the relation between a particular image and the position of a specific object within the image. 2.) Cluster algorithms: Cluster algorithms excel at discovering structure from data points.it may also occur that classification algorithms (pattern recognition algorithms) have missed identifying an object, thereby failing to classify and report it to the system. This may happen due to the images being of very low-resolution or with very few data points. In such situations, it becomes difficult for the system to detect and locate objects in the surroundings. Clustering algorithms define the class of problem and class of methods. Generally, clustering techniques are established using centroid-­based and hierarchical modeling approaches. 3.) Decision Matrix Algorithms: Decision matrix algorithms are essentially used for decision making. These algorithms determine the moves of the self-driving car. So, whether the car needs to take a left or a right turn, whether it needs to brake or accelerate, the answer to such questions is determined by the accuracy of these algorithms concerning classification, recognition, and prediction of the objects’ next movement."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Market Analysis",
+			"patterns": [
+				"How Machine learning helps in boosting the marketing strategies of a product",
+				"How machine learning helps in analysing the market for a product",
+				"How machine learning helps in getting customers attention for a product",
+				"What are the techniques used for market analysis in machine learning"
+			],
+			"responses": [
+				"Marketing success depends on many factors. We need accurate consumer research to build our branding strategy, engaging content to delight our audience, etc. Fortunately, machine learning can already improve marketer performance on common tasks such as customer segmentation, generating branded collateral, customer communication, etc. Following are some common techniques and applications: 1.) Clustering for customer segmentation and discovery:The algorithms analyze billions of customer’s interests and identify specific customer’s interests based on their social media activities and then generate a visual report grouping people with similar interests. 2.) Regressions models for dynamic pricing:  Regression techniques in Machine Learning allow marketers to predict numerical values based on pre-existing features, which in turn optimizes the different aspects of the customer journey. Regression techniques also helps in sales forecasting and in optimizing marketing spend. 3.)Text extraction and summarization for trending news:  Marketers can leverage ML to extract relevant content from online news articles and other data sources to determine how people view their brand and or react to their products. ML algorithms using APIs such as ALYIEN can be used to aggregate relevant news, social media sentiments monitoring, and other purposes."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "A/B Testing",
+			"patterns": [
+				"What is A/B Testing",
+				"Define A/B Testing"
+			],
+			"responses": [
+				"A/B is Statistical hypothesis testing for randomized experiment with two variables A and B. It is used to compare two models that use different predictor variables in order to check which variable fits best for a given sample of data. Consider a scenario where we’ve created two models (using different predictor variables) that can be used to recommend products for an e-commerce platform. A/B Testing can be used to compare these two models to check which one best recommends products to a customer."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "Sampling",
+			"patterns": [
+				"Define Cluster Sampling",
+				"What is Cluster Sampling"
+			],
+			"responses": [
+				"It is a process of randomly selecting intact groups within a defined population, sharing similar characteristics. It is a process of randomly selecting intact groups within a defined population, sharing similar characteristicsFor example, if you’re clustering the total number of managers in a set of companies, in that case, managers (samples) will represent elements and companies will represent clusters."
+			],
+			"context": [
+				""
+			]
+		},
+		{"tag":"Dimensionality Reduction",
+		 "patterns":["What is PCA, KPCA and ICA used for", "Why PCA, KPCA, and ICA are used for", "How dimensionality reduction can be done" ],
+		 "responses":["PCA (Principal Components Analysis), KPCA ( Kernel based Principal Component Analysis) and ICA ( Independent Component Analysis) are important feature extraction techniques used for dimensionality reduction."
+		 ],
+		 "context":[""
+		 ]
+		},
+		{"tag":"Realtional Evaluation",
+		 "patterns":["What are the components of relational evaluation techniques" ],
+		 "responses":["The important components of relational evaluation techniques are: 1.Data Acquisition 2.Ground Truth Acquisition 3.Cross Validation Technique 4.Query Type 5.Scoring Metric 6.Significance Test" ],
+		 "context":[""]
+		},
+		{"tag":"Areas of Problems",
+		 "patterns": ["What are the areas in robotics and information processing where sequential prediction problem arises", "Mention some areas in robotics and information processing where problem arises due to sequential model prediction" ],
+		 "responses":["The areas in robotics and information processing where sequential prediction problem arises are: 1.Imitation Learning. 2.Structured prediction. 3.Model based reinforcement learning."  ],
+		 "context":[""]  
+		},
+		{"tag":"PAC Learning",
+		 "patterns":["What is PAC Learning","Define PAC Learning" ],
+		 "responses":["PAC (Probably Approximately Correct) learning is a learning framework that has been introduced to analyze learning algorithms and their statistical efficiency." ],
+		 "context":[""] 
+		},
+		{"tag":"Sequence Learning process",
+		 "patterns": ["What are the different categories you can categorize the sequence learning process","classify the sequence learning process","Categories of sequence learning process" ],
+		 "responses":[" Following are the categories of Sequence Learning process: 1.Sequence prediction 2.Sequence generation 3.Sequence recognition 4.Sequential decision " ],
+            "context":[""]
+		}
+	]
+}
