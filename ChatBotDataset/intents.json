@@ -68,7 +68,7 @@
          "patterns": [],
          "responses": ["Loading hospital details"],
          "context": [""]
-        }
+        },
 
 
 
@@ -271,7 +271,7 @@
          "patterns": ["key difference between supervised and unsupervised learning", "what is the key difference between supervised and unsupervised learning","Significant point of difference between supervised and unsupervised learning in ml"],
          "responses": ["Supervised learning technique needs labeled data to train the model. For example, to solve a classification problem (a supervised learning task), you need to have label data to train the model and to classify the data into your labeled groups. Unsupervised learning does not need any labelled dataset. This is the main key difference between supervised learning and unsupervised learning."],
          "context": [""]
-        }
+        },
 
 
 
