@@ -1,0 +1,439 @@
+{
+	"intents": 
+	[
+		{
+			"tag": "methods of moments",
+			"patterns": 
+			[
+				"what is method of moments",
+				"what do you mean by method of moments",
+				"define method of moments"
+			],
+			"responses": 
+			[
+				"One of the statistical approaches for unsupervised learning is the method of moments. In the method of moments, the unknown parameters (of interest) in the model are related to the moments of one or more random variables, and thus, these unknown parameters can be estimated given the moments. The moments are usually estimated from samples empirically. The basic moments are first and second order moments. For a random vector, the first order moment is the mean vector, and the second order moment is the covariance matrix (when the mean is zero). Higher order moments are usually represented using tensors which are the generalization of matrices to higher orders as multi-dimensional arrays."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "Face Clustering Pipeline",
+			"patterns": 
+			[
+				"what is unsupervised face clustering pipeline",
+				"what do you mean by uinsupervised face clustering pipeline",
+				"define unsupervised face clustering pipeline"
+			],
+			"responses": 
+			[
+				"Live face-recognition is a problem that automated security division still face. To train a supervised model, we need to get datasets of our target labels which is still a tedious task. So, Unsupervised Face Clustering pipeline is a dataset generation pipeline which takes a video clip as source and extracts all the faces and clusters them to limited and accurate sets of images representing a distinct person. Each set can easily be labeled by human input with ease."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "working of unsupervised face clustering pipeline",
+			"patterns": 
+			[
+				" explain the working of Unsupervised Face Clustering Pipeline",
+				" How does unsupervised face clustering pipeline works",
+				" what is the use of unsupervised face clustering pipeline"
+			],
+			"responses": 
+			[
+				"It uses opencv lib for per second frames extraction from input video clip. Then it will use face_recognition library (backed by dlib) for extracting the faces from the frames and align them for feature extractions.After that it extracts the human observable features and cluster them using DBSCAN clustering provided by scikit-learn. For the solution, it crops out all the faces, create labels and group them in folders for users to adapt them as a dataset for their training use-cases."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "python3 modules to implement unsupervised face clustering pipeline",
+			"patterns": 
+			[
+				" what are the required python modules for implementing unsupervised face clustering pipeline",
+				" name the modules required for the implementation of unsupervised face clustering",
+				" what are some of the modules required for usupervised face  clustering pipeline"
+			],
+			"responses": 
+			[
+				"OS, CV2, NUMPY, TENSORFLOW, JSON, Regular Expression, SHUTIL, TIME, PICKLE,PYPIPER, TQDM, IMUTILS ,FACE_RECOGNITION, DLIB, SKLEARN, Warning"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "face clustering and its realtion  unsupervised learning",
+			"patterns": 
+			[
+				"what is face clutering",
+				"how face clustering works",
+				"what do you mean by face clustering",
+				"define face clustering and its realtion wih unsupervsied learning",
+				"how face clustering and unsupervised learning is realted",
+				"What is Face Clustering and how it is related to Unsupervised Learning"
+			],
+			"responses": 
+			[
+				"In face clustering we need to perform unsupervised learning we have only the faces themselves with no names/labels. From there we need to identify and count the number of unique people in a dataset."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "exclusive clustering",
+			"patterns": 
+			[
+				"what is exlclusive clustering",
+				"what do you mean by exlclusive clustering",
+				"define exlclusive clustering"
+			],
+			"responses": 
+			[
+				"In this clustering method, Data are grouped in such a way that one data can belong to one cluster only."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "overlapping clustering",
+			"patterns": 
+			[
+				"what is overlapping clustering",
+				"what do you mean by overlapping clustering",
+				"define overlapping clustering"
+			],
+			"responses": 
+			[
+				"    In this technique, fuzzy sets are used to cluster data. Each point may   belong to two or more clusters with separate degrees of membership. Here, data will be associated with an appropriate membership value. Example: Fuzzy C-Means"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "probabilistic clustering",
+			"patterns": 
+			[
+				"What is Probabilistic Clustering",
+				"define probabilistic clustering",
+				"what do you mean by probabilistic clustering"
+			],
+			"responses": 
+			[
+				"This technique uses probability distribution to create the clusters Example: Following keywords: Man’s shoe., Women’s shoe.Women’s glove.Man’s glove. can be clustered into two categories shoe and glove or man and women."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "Fzzy c-Means",
+			"patterns": 
+			[
+				"what is fcm",
+				"what is fuzzy c-means",
+				"define fcm",
+				"what do you mean by fuzzy c-means"
+			],
+			"responses": 
+			[
+				"Fuzzy c-means (FCM) is a method of clustering which allows one piece of data to belong to two or more clusters. This method (developed by Dunn in 1973 and improved by Bezdek in 1981) is frequently used in pattern recognition."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "FCM algorithm",
+			"patterns": 
+			[
+				"Explain the fcm algorithm",
+				"working of fcm algorithm",
+				"how does fcm algorithm works"
+			],
+			"responses": 
+			[
+				"The fuzzy c-means algorithm is very similar to the k-means algorithm:The FCM algorithm attempts to partition a finite collection of n elements x={x1. . . . . . .xn}  into a collection of c fuzzy clusters with respect to some given criterion.Given a finite set of data, the algorithm returns a list of c cluster centres, c= {c1. . . . cn }and a partition matrix, W= Wij ∈ [0,1] , i=1, . . . ,n, j=1, . . . . , c  where each element, Wij, tells the degree to which element , Xi , belongs to cluster Cj"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "comparison between K-Means and FCM clustering",
+			"patterns": 
+			[
+				"compare k-means and fcm clustering",
+				"difference between k-means and fcm clustering",
+				"k-means vs fcm clsutering",
+				"what are the differences between fcm and k-means clustering"
+			],
+			"responses": 
+			[
+				"K-means clustering also attempts to minimize the objective function. This method differs from the k-means objective function by the addition of the membership values Wij  and the fuzzifier, m ∈ r  , with m>=1. The fuzzifier  m determines the level of cluster fuzziness. A large m results in smaller membership values, Wij , and hence, fuzzier clusters. In the limit  m=1, the memberships, Wij , converge to 0 or 1, which implies a crisp partitioning. In the absence of experimentation or domain knowledge,  m is commonly set to 2. The algorithm minimizes intra-cluster variance as well, but has the same problems as 'k'-means; the minimum is a local minimum, and the results depend on the initial choice of weights."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "applications of association rules",
+			"patterns": 
+			[
+				"Mention some applications of association rules",
+				"what are some of the applications of association rules",
+				"mention some areas where association rules can be used"
+			],
+			"responses": 
+			[
+				"They are commonly used for Market Basket Analysis (which items are bought together), Customer clustering in Retail (Which stores people tend to visit together), Price Bundling, Assortment Decisions, Cross Selling and others."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "terms related to association rules",
+			"patterns": 
+			[
+				"mention some of the key terms related to association rules",
+				"terminologies related to association rules",
+				"what are some of the key words related to association rules",
+				"what are some of the key terms related to association rules"
+			],
+			"responses": 
+			[
+				"1.)itemsets: It refers to the collection of items. N item set means set of n items. Simply, it is the set of item purchased by customers. 2.)Support: It is percentage of time X and Y occur together out of all transaction.((Frequency of X and Y) / (Total # of records)) 3.)Confidence: It is defined as measure of certainty associated with each discovered rule. It is percent of transactions that contains both X and Y out of all transaction that contains X(Frequency of X and Y) / (Frequency of X) 4.)Lift: It is measure of how X and Y are related rather than coincidentally happening together. It measures how many times more often X and Y occur together then expected if they are statistically independent to each other. This measure will be our main focus when evaluating the algorithm results. Lift (X => Y) = Confidence(X => Y) / Support(Y) 5.)Minlen: the minimum number of items in the rule 6.)Maxlen: the maximum number of items in the rule 7.)Target: indicates the type of association mined Frequent Itemsets Generation: Find the most frequent itemsets from the data based on predetermined support and minimum item and maximum item 8.)Rule Generation: This step involves generating all the rules from frequent item sets. We can control the number of rules generated by controlling support, confidence or lift. 9.)LHS > RHS: Left hand side and Right-hand side are usually used to understand how often item A and item B occur together. If we are trying to understand how often people go to store A after going to store B. Store A would be LHS and store B would be RHS. Similarly, If we are trying to understand which stores people usually go to before going to store A, Store A would be on RHS and other stores would be on LHS."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "algorithms for association rule generation",
+			"patterns": 
+			[
+				"what are the algorithms for association rule generation",
+				"mention some of the algorithms for generating association rule ",
+				"name some algorithms to generate association rule"
+			],
+			"responses": 
+			[
+				"1.)Apriori algorithm 2.)Eclat algorithm FP(Frequent Pattern) 3.)Growth algorithm"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "FP growth algorithm",
+			"patterns": 
+			[
+				"Explain the fp growth algorithm",
+				"how does fp growth algorithm works",
+				"explain the working of fp growth algorithm"
+			],
+			"responses": 
+			[
+				"fp growth stands for frequent pattren growth. This algorithm was proposed by Han, works as follows: first it compresses the input database creating an FP-tree instance to represent frequent items. After this first step it divides the compressed database into a set of conditional databases, each one associated with one frequent pattern. Finally, each such database is mined separately. Using this strategy, the FP-Growth reduces the search costs looking for short patterns recursively and then concatenating them in the long frequent patterns, offering good selectivity."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "FP tree structure by Han",
+			"patterns": 
+			[
+				"explain the fp tree structure given by han",
+				"explain the han's tree structure for fp tree",
+				"explain the structure of fp tree given by han",
+				"how is the structure of fp tree given by han"
+			],
+			"responses": 
+			[
+				" The frequent-pattern tree (FP-tree) is a compact structure that stores quantitative information about frequent patterns in a database. Han defines the FP-tree as the tree structure io below:1.)One root labeled as “null” with a set of item-prefix subtrees as children, and a frequent-item-header table. 2.)Each node in the item-prefix subtree consists of three fields: i.)Item-name: registers which item is represented by the node; ii.)Count: the number of transactions represented by the portion of the path reaching the node; iii.)Node-link: links to the next node in the FP-tree carrying the same item-name, or null if there is none. 3.)Each entry in the frequent-item-header table consists of two fields: i.)Item-name: as the same to the node; ii.)Head of node-link: a pointer to the first node in the FP-tree carrying the item-name."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "algorithm for building a fp tree",
+			"patterns": 
+			[
+				"explain the first phase of fp growth algorithm",
+				"explain the algorithm for building a fp tree",
+				"algorithm to build a fp tree",
+				"how fp tree can be built"
+			],
+			"responses": 
+			[
+				"The first phase of this algorithm includes building the fp-tree. The algorithm for constructing the tree is as follows:Input: A transaction database DB and a minimum support threshold ?. Output: FP-tree, the frequent-pattern tree of DB. Method: The FP-tree is constructed as follows. 1.Scan the transaction database DB once. Collect F, the set of frequent items, and the support of each frequent item. Sort F in support-descending order as FList, the list of frequent items. 2.Create the root of an FP-tree, T, and label it as “null”. For each transaction Trans in DB do the following:i.)Select the frequent items in Trans and sort them according to the order of FList. Let the sorted frequent-item list in Trans be [ p | P], where p is the first element and P is the remaining list. Call insert tree([ p | P], T ). ii.)The function insert tree([ p | P], T ) is performed as follows. If T has a child N such that N.item-name = p.item-name, then increment N ’s count by 1; else create a new node N , with its count initialized to 1, its parent link linked to T , and its node-link linked to the nodes with the same item-name via the node-link structure. If P is nonempty, call insert tree(P, N ) recursively"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "algorithm for mining a fp tree",
+			"patterns": 
+			[
+				"explain the second phase of the fp growth algorithm",
+				"explain the algorithm to find the complete set of frequent patterns"
+			],
+			"responses": 
+			[
+				"After constructing the FP-Tree it’s possible to mine it to find the complete set of frequent patterns. To accomplish this job, Han in  presents a group of lemmas and properties, and thereafter describes the FP-Growth Algorithm as presented below: Input: A database DB, represented by FP-tree constructed according to the first phase of the Algorithm , and a minimum support threshold ?. Output: The complete set of frequent patterns.Method: call FP-growth(FP-tree, null).Procedure FP-growth(Tree, a) (01)  if Tree contains a single prefix path then;  // Mining single prefix-path FP-tree (02)  let P be the single prefix-path part of Tree; (03)  let Q be the multipath part with the top branching node replaced by a NULL root; (04)  for each combination (denoted as ß) of the nodes in the path P do(05) generate pattern ß ∪ a with support = minimum support of nodes in ß;(06)  let freq pattern set(P) be the set of patterns so generated; (07)  else let Q be Tree; (08)  for each item ai in Q do  (09)  generate pattern ß = ai ∪ a with support = ai .support;(10)  construct ß’s conditional pattern-base and then ß’s conditional FP-tree Tree ß;(11)  If Tree ß ≠ Ø then(12)  call FP-growth(Tree ß , ß); (13)  let freq pattern set(Q) be the set of patterns so generated;(14) return(freq pattern set(P) ∪ freq pattern set(Q) ∪ (freq pattern set(P) × freq pattern set(Q)))"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "Apriori algorithm",
+			"patterns": 
+			[
+				"give an overview of apriori algorithm",
+				"explain the apriori algorithm",
+				"briefly explain the apriori algorithm",
+				"what is apriori algorithm"
+			],
+			"responses": 
+			[
+				"Apriori is an algorithm for frequent item set mining and association rule learning over relational databases. It proceeds by identifying the frequent individual items in the database and extending them to larger and larger item sets as long as those item sets appear sufficiently often in the database. this has applications in domains such as market basket analysis.The Apriori algorithm was proposed by Agrawal and Srikant in 1994. Apriori is designed to operate on databases containing transactions. Each transaction is seen as a set of items (an itemset). Given a threshold C , the Apriori algorithm identifies the item sets which are subsets of at least C  transactions in the database."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "working of apriori algorithm",
+			"patterns": 
+			[
+				"explain the working of apriori algorithm",
+				"how does the apriori algorithm works",
+				"explain the steps to be taken to implement the apriori algorithm"
+			],
+			"rewsponses": 
+			[
+				"Apriori uses a bottom up approach, where frequent subsets are extended one item at a time (a step known as candidate generation), and groups of candidates are tested against the data. The algorithm terminates when no further successful extensions are found. Apriori uses breadth-first search and a Hash tree structure to count candidate item sets efficiently. It generates candidate item sets of length k from item sets of length k-1. Then it prunes the candidates which have an infrequent sub pattern. According to the downward closure lemma, the candidate set contains all frequent k-length item sets. After that, it scans the transaction database to determine frequent item sets among the candidates."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "limitations of apriori algorithm",
+			"patterns": 
+			[
+				"Mention some limitations of Apriori algorithm",
+				"what are the limitations of apriori algorithm",
+				"what are the diadvantages of apriori algorithm"
+			],
+			"responses": 
+			[
+				"1.Candidate generation generates large numbers of subsets (The algorithm attempts to load up the candidate set, with as many as possible subsets before each scan of the database). Bottom-up subset exploration (essentially a breadth-first traversal of the subset lattice) finds any maximal subset S only after all  2| s | - 1 of its proper subsets. 2.The algorithm scans the database too many times, which reduces the overall performance. Due to this, the algorithm assumes that the database is Permanent in the memory. 3.the time and space complexity of this algorithm are very high: O(2| D |), thus exponential, where |D| is the horizontal width (the total number of items) present in the database"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "ECLAT algorithm",
+			"patterns": 
+			[
+				"what is eclat algorithm",
+				"overview of eclat algorithm",
+				"give a brief idea about eclat algorithm"
+			],
+			"responses": 
+			[
+				"The ECLAT algorithm stands for Equivalence Class Clustering and  bottom-up Lattice Traversal. It is one of the popular methods of Association Rule mining. It is a more efficient and scalable version of the Apriori algorithm. While the Apriori algorithm works in a horizontal sense imitating the Breadth-First Search of a graph, the ECLAT algorithm works in a vertical manner just like the Depth-First Search of a graph. This vertical approach of the ECLAT algorithm makes it a faster algorithm than the Apriori algorithm."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "working of eclat algorithm",
+			"patterns": 
+			[
+				"explain the working of eclat algorithm",
+				"how does the eclat algorithm works",
+				"explain the working principle behind the eclat algorithm"
+			],
+			"responses": 
+			[
+				"The basic idea is to use Transaction Id Sets(tidsets) intersections to compute the support value of a candidate and avoiding the generation of subsets which do not exist in the prefix tree. In the first call of the function, all single items are used along with their tidsets. Then the function is called recursively and in each recursive call, each item-tidset pair is verified and combined with other item-tidset pairs. This process is continued until no candidate item-tidset pairs can be combined."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "advanatges of eclat algorithm",
+			"patterns": 
+			[
+				"what are the advantages of using eclat algorithm",
+				"mention some good results on using eclat algorithm",
+				"why eclat algorithm is used over apriori algorithm"
+			],
+			"responses": 
+			[
+				"1.Memory Requirements: Since the ECLAT algorithm uses a Depth-First Search approach, it uses less memory than Apriori algorithm. 2.Speed: The ECLAT algorithm is typically faster than the Apriori algorithm. 3.Number of Computations: The ECLAT algorithm does not involve the repeated scanning of the data to compute the individual support values."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "detection of fake users using unsupervised learning",
+			"patterns": 
+			[
+				"what are the methods of unsupervised learning that helps in detecting fake users",
+				"how unsupervised learning can be used to detect fake users",
+				"how the application of unsupervised learning helps in detecting fake users",
+				"how unsupervised learning can be apllied to detetc fake users"
+			],
+			"responses": 
+			[
+				"Methods like Artificial Neural Networks, General adversarial networks (GANs), Deep belief Nets (DBN) of unsupervised learning can be used to detect fake users on a platform."
+			],
+			"context": 
+			[
+				""
+			]
+		}
+	]
+}
