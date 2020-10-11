@@ -9,9 +9,7 @@ import json
 import pickle
 
 import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
+
 import random
 
 words=[]
@@ -21,19 +19,32 @@ ignore_words = ['?', '!']
 data_file = open('intents.json', encoding="utf8").read()
 intents = json.loads(data_file)
 
+try:
+    for intent in intents['intents']:
 
-for intent in intents['intents']:
-    for pattern in intent['patterns']:
+        try:
+            for pattern in intent['patterns']:
+                
+                try:
+                    # take each word and tokenize it
+                    w = nltk.word_tokenize(pattern)
+                    words.extend(w)
+                    # adding documents
+                    documents.append((w, intent['tag']))
+            
+                    # adding classes to our class list
+                    if intent['tag'] not in classes:
+                        classes.append(intent['tag'])
+                except:
+                    print("An exception occurred inside for loop main code")
 
-        # take each word and tokenize it
-        w = nltk.word_tokenize(pattern)
-        words.extend(w)
-        # adding documents
-        documents.append((w, intent['tag']))
+        except:
+            print("An exception occurred in 2nd for loop patterns")
+except:
+  print("An exception occurred in 1st for loop tag")
 
-        # adding classes to our class list
-        if intent['tag'] not in classes:
-            classes.append(intent['tag'])
+
+
 
 words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
 words = sorted(list(set(words)))
