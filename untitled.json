@@ -6,26 +6,28 @@
 			      "In what areas Pattern Recognition is used?",
 			      "areas where pattern recognition can be used",
 			      "applications of pattern recognition"
-			    ], 
+			          ], 
 			    "responses": [
 			    "Pattern Recognition can be used in Computer Vision, Speech Recognition, Data Mining, Statistics, Informal Retrieval, Bio-Informatics"
-         ],
+                                         ],
 			"context": [
 				""
-			]			        
+			            ]			        
 			},
+                     {
 			"tag":"genetic programming",
 			"patterns": [
 			          "what is genetic programming",
 			          "define genetic programming"
-			],
+			            ],
 			"responses": [
-			          "Genetic programming is one of the two techniques used in machine learning. The model is based
+"Genetic programming is one of the two techniques used in machine learning. The model is based
 on the testing and selecting the best choice among a set of results."
-],
+                                     ],
 			"context": [
 				""
-			]
+			            ]
+                        },
 		{
 			"tag": " Inductive Logic Programming",
 			"patterns": [
@@ -35,10 +37,10 @@ on the testing and selecting the best choice among a set of results."
 			"responses": [
 			          "  Inductive Logic Programming (ILP) is a subfield of machine learning which uses logical
 programming representing background knowledge and examples."
-],
+                                      ],
 			"context": [
 				""
-			]
+			            ]
 		},
 		{
 			"tag": "model selection",
@@ -49,23 +51,23 @@ programming representing background knowledge and examples."
             "responses": [
 			          " The process of selecting models among different mathematical models, which are used to
 describe the same data set is known as Model Selection."
-            ],
+                          ],
 			"context": [
 				""
-			]
+			           ]
 		},
 		{
 			"tag": "calibration in Supervised Learning",
 			"patterns": [
-			          "What are the two methods used for the calibration in Supervised Learning?",
+			          "What are the two methods used for the calibration in Supervised Learning",
 			          "two methods used for calibration"
-			]
+			            ]
             "responses": [
                         " The two methods used for predicting good probabilities in Supervised Learning are Platt Calibration, Isotonic Regression"         
 			  ],
 			"context": [
 				""
-			]
+			           ]
 		},
 		{
 			"tag": "overfitting",
