@@ -61,6 +61,7 @@ try:
                     counter=counter+1
                     print("counter inside main - is - ", counter)
                     print("Present tag is - ",intent['tag'])
+                    print("Present pattern question is - ",pattern)
                     
                 except:
                     print("An exception occurred inside for loop main code in counter - ",counter)
