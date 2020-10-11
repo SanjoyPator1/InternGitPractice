@@ -1,0 +1,371 @@
+{
+	"intents": 
+	[
+		{
+			"tag": "importance of unsupervised learning",
+			"patterns": 
+			[
+				"how important is unsupervised learning in the context of deep learning",
+				"importance of unsupervised learning in the context of deep learning",
+				"what is the role of unsupervised learning in deep learning"
+			],
+			"responses": 
+			[
+				"Unsupervised learning is a machine learning technique, where we do not need to supervise the model. Instead, we need to allow the model to work on its own to discover information. It’s important to gain insight into the way the system behaves without supervision. For example, GAN, CNN, K-NN, etc.Deep learning can be either supervised or unsupervised. It all depends on how we want to use it. Deep learning is used for highly scalable datasets and algorithms which are complex for machine learning algorithms like SVM, Logistic Regression etc., to model. For example, Convolutional Neural Network (CNN) can be both supervised or unsupervised. If we want to classify images, we need to add dense layers and for classification, the training will be supervised. But, if we want to cluster images based on similarities of a group of images, we will extract the features using CNN and then use an unsupervised method like k-means or DBSCAN clustering."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "principle of Unsupervised Data Augmentation",
+			"patterns": 
+			[
+				"Explain the principle of unsupervised data augmentation",
+				"what is the wotrking principle of unsupervised data augmentation",
+				"what is uda"
+			],
+			"responses": 
+			[
+				"  Unsupervised Data Augmentation or UDA is a semi-supervised learning method which achieves state-of-the-art results on a wide variety of language and vision tasks. UDA is a method of semi-supervised learning, that reduces the need for labeled examples and better utilizes unlabeled ones"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "use of auto encoder",
+			"patterns": 
+			[
+				"what is the use of auto encoders",
+				"why auto encoders are uased when we already have more powerful dimension reduction techniques such as pca",
+				"what is the advantage of auto encoders over pca ",
+				"why auto encoders are used",
+				"why auto encoders are used over pca"
+			],
+			"responses": 
+			[
+				"Both PCA and Autoencoders are dimensional reduction techniques but Autoencoders are used more for detecting anomalies than for reducing data. Using Autoencoder, we try to reconstruct our data and then use reconstruction error to identify anomalous data points. This reconstruction is something that PCA is not very good at, especially when you have non-linear relationships among variables. Autoencoders, on the other hand, can use deep architecture to learn complex non-linear relationships as well."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "PCA or auto encoder",
+			"patterns": 
+			[
+				"Which method extracts the better features for unsupervised learning: PCA or Auto Encoder",
+				"which is better at extracting features for unsupervised learning",
+				"which is better pca or auto encoder",
+				"which method is more prefferable to extract features of unsupervised learning",
+				"which method is good to implement features of unsupervised learning"
+			],
+			"responses": 
+			[
+				" PCA will result in slower processing compared with an Autoencoder"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "use of unsupervised clustering models",
+			"patterns": 
+			[
+				"how can we use unsupervised clustering models for classification tasks",
+				"how can we implement unsupervised clustering models for classification tasks",
+				"how unsupervised clustering models are used for classiification task",
+				"use of unsupervised clustering models in classification tasks"
+			],
+			"responses": 
+			[
+				"For supervised learning we need to have a labeled data set. If not, it is good to run unsupervised learning algorithms for automatically labeling unlabeled data. Once the data is labelled using clustering algorithms, then it is possible to use supervised learning algorithms. For linking the two tasks a simple script can be written that connect the output of clustering as an input for the classification task."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "techniques for anomaly detection on a dataset",
+			"patterns": 
+			[
+				"mention some best techniques for anomaly detection on a dataset",
+				"what are some of the best techniques to detect anomalies for a adatset having normal as well as abnormal behaviour",
+				"What is the best unsupervised technique for Anomaly Detection for a dataset having normal as well as abnormal behaviour",
+				"which clustering algorithms are best for detecting anomalies on a dataset having normal as well as abnormal behaviours"
+			],
+			"responses": 
+			[
+				"We can use the following clustering algorithm - 1.)K-means/medoid 2.)Fuzzy c-means 3.)partition-based clustering"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "need of unsupervised learning",
+			"patterns": 
+			[
+				"when do we need unsupervised learning",
+				"when do we use unsupervised learning the most",
+				"use of unsupervised learning"
+			],
+			"responses": 
+			[
+				" In unsupervised learning, we do not have a supervisor which tells us what is right and what is wrong i.e. we do not have input data with example output data where we want to learn the input/output relation. In general, we use unsupervised learning when we want to find general structures in our data. for example- major trends, a low-dimensional embedding or clustering."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "unsupervised learning algorithm for categorical data",
+			"patterns": 
+			[
+				"which algorithm of unsupervised machine learning can be applied to categorical data",
+				"name an algorithm based on unsupervised learning that can be used on categorical data",
+				"What are the unsupervised machine learning algorithms which can be applied on categorical data"
+			],
+			"responses": 
+			[
+				" K-means algorithm can be used to generate labelled/categorical of data "
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "types of clustering methods",
+			"patterns": 
+			[
+				"What are the different types of clustering methods",
+				"mention some clustering methods",
+				"list some of the different types of clustering methods"
+			],
+			"responses": 
+			[
+				"Different types of clustering methods are -   Density-based methods, Hierarchical based method, Partitioning methods, Grid-based methods"
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "Density based lagorithms",
+			"patterns": 
+			[
+				"explain how density based algorithm works",
+				"explain the working of density based algorithms",
+				"how density based algorithms works"
+			],
+			"responses": 
+			[
+				"These methods consider the clusters as the dense region having some similarity and different from the lower dense region of the space. These methods have good accuracy and ability to merge two clusters. Example:  DBSCAN (Density-Based Spatial Clustering of Applications with Noise), OPTICS (Ordering Points to Identify Clustering Structure) etc."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "hierarchical clustering based method",
+			"patterns": 
+			[
+				"how hierarchical based clustering algorithm works",
+				"explain the hierarchical based clustering algorithm",
+				"explain the working of hierarchical based clustering algorthm"
+			],
+			"responses": 
+			[
+				"The clusters formed in this method forms a tree-type structure based on the hierarchy. New clusters are formed using the previously formed one. It is divided into two categories:1.)Agglomerative (bottom up approach) 2.)Divisive (top down approach) for example: CURE (Clustering Using Representatives), BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies) etc."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "partitioning clustering method",
+			"patterns": 
+			[
+				"explain the partitioning clustering methods",
+				"explain the working of partitioning clustering methods",
+				"how the partitioning clustering methods works"
+			],
+			"responses": 
+			[
+				" These methods partition the objects into k clusters and each partition forms one cluster. This method is used to optimize an objective criterion similarity function such as when the distance is a major parameter example K-means, CLARANS (Clustering Large Applications based upon Randomized Search) etc."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "grid-based clsutering methods",
+			"patterns": 
+			[
+				"explain the grid based clustering methods",
+				"how grid based methods works",
+				"explain the algorithms based on grid based clustering methods"
+			],
+			"responses": 
+			[
+				"In this method the data space is formulated into a finite number of cells that form a grid-like structure. All the clustering operation done on these grids are fast and independent of the number of data objects example STING (Statistical Information Grid), wave cluster, CLIQUE (Clustering in Quest) etc."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag":"use of KNN algorithm",
+			"patterns": 
+			[
+				"when do we use knn algorithm",
+				"when do we need knn algorithm",
+				"when it is prefferable to use knn algorithm"
+			],
+			"responses": 
+			[
+				"KNN can be used for both classification and regression predictive problems. However, it is more widely used in classification problems in the industry. To evaluate any technique, we generally look at 3 important aspects: 1. Ease to interpret output 2. Calculation time  3. Predictive Power. KNN algorithm fairs across all parameters of considerations. It is commonly used for its easy of interpretation and low calculation time."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "use of KNN algorithm",
+			"patterns": 
+			[
+				"when do we need knn algorithm",
+				"what is the use of knn algorithm",
+				"when is it prefferable to use knn algorithm"
+			],
+			"responses": 
+			[
+				"KNN can be used for both classification and regression predictive problems. However, it is more widely used in classification problems in the industry. To evaluate any technique, we  enerally look at 3 important aspects: 1. Ease to interpret output  2. Calculation time  3. Predictive Power.  KNN algorithm fairs across all parameters of considerations. It is commonly used for its easy of interpretation and low calculation time."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "working of knn algorithm",
+			"patterns": 
+			[
+				"how does the knn algorithm works",
+				"explain the working of knn algorithm",
+				"explain the knn algorithm"
+			],
+			"responses": 
+			[
+				" Let’s take a simple case to understand this algorithm. Lets say there is a spread of red circles (RC) and green squares (GS) and you intend to find out the class of the blue star (BS). BS can either be RC or GS and nothing else. The “K” in KNN algorithm is the nearest neighbor we wish to take the vote from. Let’s say K = 3. Hence, we will now make a circle with BS as the center just as big as to enclose only three datapoints on the plane. The three closest points to BS are all RC. Hence, with a good confidence level, we can say that the BS should belong to the class RC. Here, the choice became very obvious as all three votes from the closest neighbor went to RC. The choice of the parameter K is very crucial in this algorithm. Next, we will understand what are the factors to be considered to conclude the best K."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tags": "advantages of knn algorithm",
+			"patterns": 
+			[
+				"what are the advanatges of knn algorithm",
+				"mention some of the advanatges of knn algorithm",
+				"what are the benefits of using knn algorithm",
+				"what are some of the characteristics that can be considered as advanatges of knn algorithm"
+			],
+			"responses": 
+			[
+				"The advantages of KNN algorithm are –  1.)The algorithm is simply and easy to implement, 2.)There’s no need to build a model, tune several parameters, or make additional assumptions 3.)The algorithm is versatile. It can be used for classification, regression, and search."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "disadvantages of knn algorithm",
+			"patterns": 
+			[
+				"what are the disadvantges of using knn algorithm",
+				"what can be the reasons for not using knn algorithm",
+				"list some of the disdavantages of knn algorithm"
+			],
+			"responses": 
+			[
+				" Disadvantages of KNN algorithm are: The algorithm gets significantly slower as the number of examples and/or predictors/independent variables increase."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "working of k-means algorithm",
+			"patterns": 
+			[
+				"explain the k-means algorithm",
+				"explain the working of k-means algorithm",
+				"how does the k-means algorithm works"
+			],
+			"responses": 
+			[
+				" To process the learning data, the K-means algorithm in data mining starts with a first group of randomly selected centroids, which are used as the beginning points for every cluster, and then performs iterative (repetitive) calculations to optimize the positions of the centroids It halts creating and optimizing clusters when either: 1.)The centroids have stabilized — there is no change in their values because the clustering has been successful. 2.)The defined number of iterations has been achieved."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "advantages of k-means algorithm",
+			"patterns": 
+			[
+				"what are some of the advanatges of k-means algorithm",
+				"mention some advanatges of k-means algorithm",
+				"what are some of the good points of using k-means algorithm",
+				"what are the advanatges of k-means algorithm"
+			],
+			"responses": 
+			[
+				" The advantages of K-means algorithm are -   1.)Relatively simple to implement.  2.)Scales to large data sets.  3.)Guarantees convergence. 4.)Can warm-start the positions of centroids.  5.)Easily adapts to new examples. 6.) Generalizes to clusters of different shapes and sizes, such as elliptical clusters."
+			],
+			"context": 
+			[
+				""
+			]
+		},
+		{
+			"tag": "disadvantges of using k-means",
+			"patterns": 
+			[
+				"mention some of the disadavantages of k-means algorithm",
+				"list some diadvantages of k-means algorithm",
+				"what are the disadvantages of k-means algorithm",
+				"what can be the possible reasons for not using k-means algorithm"
+			],
+			"responses": 
+			[
+				" The disadvantages of K-means algorithm are: 1.) Clustering data of varying sizes and density. 2.) Choosing k manually. 3.) Clustering outliers: Centroids can be dragged by outliers, or outliers might get their own cluster instead of being ignored. Consider removing or clipping outliers before clustering. 4.)Scaling with number of dimensions: As the number of dimensions increases, a distancebased similarity measure converges to a constant value between any given examples. 4.)Reduce dimensionality either by using PCA on the feature data, or by using “spectral clustering” to modify the clustering algorithm."
+			],
+			"context": 
+			[
+				""
+			]
+		}
+	]
+}
