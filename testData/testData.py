@@ -60,6 +60,7 @@ try:
                         
                     counter=counter+1
                     print("counter inside main - is - ", counter)
+                    print("Present tag is - ",intent['tag'])
                     
                 except:
                     print("An exception occurred inside for loop main code in counter - ",counter)
