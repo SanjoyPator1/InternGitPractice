@@ -11,6 +11,11 @@ import pickle
 import numpy as np
 
 import random
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Dropout
+from keras.optimizers import SGD
+
+
 
 words=[]
 classes = []
@@ -19,8 +24,9 @@ ignore_words = ['?', '!']
 data_file = open('intents.json', encoding="utf8").read()
 intents = json.loads(data_file)
 
+
 def count():
-    global counter
+    counter
     
 
 counter = 0
@@ -42,7 +48,7 @@ except Exception as error:
 
 try:
     for intent in intents['intents']:
-        
+        print('The intent is - ', intents)
 
         try:
             for pattern in intent['patterns']:
@@ -62,6 +68,8 @@ try:
                     print("counter inside main - is - ", counter)
                     print("Present tag is - ",intent['tag'])
                     print("Present pattern question is - ",pattern)
+                    print("Present document list is - ",documents)
+                    print("Present classes list is - ",classes)
                     
                 except:
                     print("An exception occurred inside for loop main code in counter - ",counter)
@@ -79,11 +87,15 @@ words = sorted(list(set(words)))
 
 classes = sorted(list(set(classes)))
 
-print (len(documents), "documents")
+print("")
+print (len(documents), "documents", documents)
+print("")
 
 print (len(classes), "classes", classes)
+print("")
 
 print (len(words), "unique lemmatized words", words)
+print("")
 
 
 pickle.dump(words,open('words.pkl','wb'))
@@ -91,3 +103,71 @@ pickle.dump(classes,open('classes.pkl','wb'))
 
 
 print("Training data created")
+
+
+#INITIALIZING THE TRAINING DATA
+
+training = []
+output_empty = [0] * len(classes)
+
+print('Output_empty is - ', output_empty)
+
+for doc in documents:
+    # initializing bag of words
+    bag = []
+    # list of tokenized words for the pattern
+    pattern_words = doc[0]
+    
+    print("")
+    print("NEXT")
+    print("present pattern_words is - ", pattern_words)
+    # lemmatize each word - create base word, in attempt to represent related words
+    pattern_words = [lemmatizer.lemmatize(word.lower()) for word in pattern_words]
+    # create our bag of words array with 1, if word match found in current pattern
+    for w in words:
+        bag.append(1) if w in pattern_words else bag.append(0)
+        
+    print("present bag is - ", bag)
+    
+    # output is a '0' for each tag and '1' for current tag (for each pattern)
+    output_row = list(output_empty)
+    output_row[classes.index(doc[1])] = 1
+    print("present output_row is - ", output_row)
+    
+    training.append([bag, output_row])
+    print("present training is - ", training)
+    
+# shuffle our features and turn into np.array
+random.shuffle(training)
+training = np.array(training)
+
+#print("training in np array is - ", training)
+
+# create train_x and train_y  lists. X - patterns, Y - Labels and features
+train_x = list(training[:,0])
+print("train_x", train_x)
+
+train_y = list(training[:,1])
+print("train_y", train_y)
+
+print("Training data created")
+
+
+# Create model - 3 layers. First layer 128 neurons, second layer 64 neurons and 3rd output layer contains number of neurons
+# equal to number of intents to predict output intent with softmax
+model = Sequential()
+model.add(Dense(128, input_shape=(len(train_x[0]),),kernel_initializer='he_uniform', activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(64, kernel_initializer='he_uniform', activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(len(train_y[0]), kernel_initializer='he_uniform', activation='softmax'))
+
+# Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+
+#fitting and saving the model
+hist = model.fit(np.array(train_x), np.array(train_y), validation_split=0.33, epochs=200, batch_size=5, verbose=1)
+model.save('chatbot_model.h5', hist)
+
+print("model created")

@@ -1,0 +1,24 @@
+{
+	"intents": 
+	[
+        {
+			"tag": "advantages of knn algorithm",
+			"patterns": 
+			[
+				"what are the advanatges of knn algorithm",
+				"mention some of the advanatges of knn algorithm",
+				"what are the benefits of using knn algorithm",
+				"what are some of the characteristics that can be considered as advanatges of knn algorithm"
+			],
+			"responses": 
+			[
+				"The advantages of KNN algorithm are –  1.)The algorithm is simply and easy to implement, 2.)There’s no need to build a model, tune several parameters, or make additional assumptions 3.)The algorithm is versatile. It can be used for classification, regression, and search."
+			],
+			"context": 
+			[
+				""
+			]
+		}
+		
+    ]
+}
