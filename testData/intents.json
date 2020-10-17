@@ -6,9 +6,15 @@
             "context": [""]
         },
         {
-            "tag": "goodbye",
-            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "tag": "SupLearn",
+            "patterns": ["What is supervised learning?", "supervised learning", "Define supervised learning"],
+            "responses": ["Supervised learning is a learning in which we teach or train the machine using data which is well labeled that means some data is already tagged with the correct answer. After that, the machine is provided with a new set of examples(data) so that supervised learning algorithm analyses the training data(set of training examples) and produces a correct outcome from labeled data."],
+            "context": [""]
+        },
+        {
+            "tag": "Example_Classification",
+            "patterns": ["Give an example of classification", "example of classification."],
+            "responses": ["Gmail classifies mails in more than one classes like social, promotions, updates, forum."],
             "context": [""]
         }
     ]

@@ -122,10 +122,11 @@ def hello_name(name):
     return response
 
 
-client_qstn = 'how+are+you'
+client_qstn = 'example+of+classification.'
 
 ans = hello_name(client_qstn)
 
+print('')
 print('the reply is - ', ans)
 
 
