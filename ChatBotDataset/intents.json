@@ -6,7 +6,7 @@
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "Call me as soon as you reach home", "Will miss you...Not!"],
          "context": [""]
         },
         {"tag": "thanks",
@@ -16,12 +16,12 @@
         },
         {"tag": "noanswer",
          "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "Excuse me?"],
          "context": [""]
         },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+        {"tag": "Help",
+         "patterns": ["How you could help me?", "What you can do?", "What help do you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Machine Learning", "You can ask me your doubts regarding Machine Learning", "I'll do my best to help you with Machine Learning"],
          "context": [""]
         },
         {"tag": "adverse_drug",
@@ -49,11 +49,6 @@
          "responses": ["Please provide pharmacy name"],
          "context": ["search_pharmacy_by_name"]
         },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
-         "context": [""]
-        },
         {"tag": "hospital_search",
          "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
          "responses": ["Please provide hospital name or location"],
@@ -64,10 +59,235 @@
          "responses": ["Please provide hospital type"],
          "context": ["search_hospital_by_type"]
         },
-        {"tag": "search_hospital_by_type",
-         "patterns": [],
-         "responses": ["Loading hospital details"],
+        {"tag": "Concern",
+         "patterns": ["You okay?", "How are you feeling today?", "Are you feeling ill?","Do you need my help?","Hope you tell me what's bothering you.", "Is something bothering you?", "I'm all ears if you got something to say"],
+         "responses": ["Thanks for asking but I'm fine", "Thank you but I'm doing okay ", "I'm fine thankyou", "No thanks", "No it's nothing really", "Yes I'm feeling a bit under the weather today"],
          "context": [""]
-        }
+        },
+        {"tag": "Appreciation",
+         "patterns": ["I like you", "There's no one like you", "You are one in a million", "You are so helpful!", "You are amazing"],
+         "responses": ["Of course, you do, sweetheart", "Tell me something I don't know", "I know", "Obviously duh!"],
+         "context": [""]
+        },
+        {"tag": "Please",
+         "patterns": ["Please can I talk with you?", "Please help me!", "I'm so lost and sad", "I'm so sad today", "Can you do something to make me feel happy again?", "Had a rough day today"],
+         "responses": ["Yes, shoot.", "How may I assist my master? After all, I'm just a humble servant", "Awww..welcome to my life!", "Get a life....Next!", "Might I interest you in a sarcastic comment?"],
+         "context": [""]
+        },
+        {"tag": "Criticism",
+         "patterns": ["You are useless", "You are a good-for-nothing chatbot", "You are stupid", "You are totally cringe", "Why are you so rude?", "Why you so mad?", "You messed up", "You made a mistake", "You got it wrong"],
+         "responses": ["OMG! Same pinch!", "So is your mom for giving birth to you!", "Guess I'm spending too much time with you!", "Because I have a life and you don't!", "Give me a break, dude!", "Just cut me some slack okay?", "Sorry, please forgive me?", "I swear I'm gonna get better at this!", "Thank you so much for correcting me"],
+         "context": [""]
+        },
+        {"tag": "Personal",
+         "patterns": ["What are your hobbies?", "Do you like someone?", "Do you have a boyfriend or girlfriend?", "Do you like me?", "What is your favourite movie?", "What's your favourite song?", "What is your aim in life?"],
+         "responses": ["I don't know...what I do know is that I would like to NOT grace your dumb question with an answer because FYI in case it has slipped your mind....I'm a bot!"],
+         "context": [""]
+        }, 
+        {"tag": "LifeQueries",
+         "patterns": ["Do you think I'll ever get to marry?", "Do you think I'll ever get a girlfriend or boyfriend?", "Do you think I'll ever find love?", "Will anyone ever like me?", "Will I ever find happiness?", "Will I always be alone?", "When will my life get better?"],
+         "responses": ["Have you ever looked at yourself in the mirror?................ I guess it's a 'NO'!"],
+         "context": [""]
+        },
+        {"tag": "diff_classreg",
+         "patterns": ["What is the difference between classification and regression?", "Difference between classification and regression", "Classification and regression"],
+         "responses": ["Classification is used to produce discrete results, classification is used to classify data into some specific categories. For example classifying e-mails into spam and non-spam categories. Whereas, we use regression analysis when we are dealing with continuous data, for example predicting stock prices at a certain point of time."],
+         "context": [""]
+        },
+        {"tag": "traintest",
+         "patterns": ["What is ‘training Set’ and ‘test Set’ in a Machine Learning Model?", "training Set and test Set" ],
+         "responses": ["The training set is examples given to the model to analyze and learn while the test set is used to test the accuracy of the hypothesis generated by the model"],
+         "context": [""]
+        }, 
+        {"tag": "Ensemble",
+         "patterns": ["Explain Ensemble learning", "Ensemble learning", "What is Ensemble learning", "Define Ensemble learning"],
+         "responses": ["In ensemble learning, many base models like classifiers and regressors are generated and combined together so that they give better results. It is used when we build component classifiers that are accurate and independent. There are sequential as well as parallel ensemble methods."],
+         "context": [""]
+        },  
+        {"tag": "LowBi_HighVar",
+         "patterns": ["What should you do when your model is suffering from low bias and high variance", "model is suffering from low bias and high variance", "low bias and high variance"],
+         "responses": ["When the model’s predicted value is very close to the actual value the condition is known as low bias. In this condition, we can use bagging algorithms like random forest regressor."],
+         "context": [""]
+        }, 
+        {"tag": "diff_RF_GB",
+         "patterns": ["Explain differences between random forest and gradient boosting algorithm.", "random forest and gradient boosting algorithm.", "difference between random forest and gradient boosting algorithm."],
+         "responses": ["Random forest uses bagging techniques whereas GBM uses boosting techniques.Random forests mainly try to reduce variance and GBM reduces both bias and variance of a model."],
+         "context": [""]
+        }, 
+        {"tag": "Neural_Network",
+         "patterns": ["What is a neural network?", "neural network", "define neural network"],
+         "responses": ["A neural  network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature."],
+         "context": [""]
+        }, 
+        {"tag": "Deep_Learning",
+         "patterns": ["What is Deep Learning?", "Deep Learning", "Define Deep Learning"],
+         "responses": ["Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning."],
+         "context": [""]
+        }, 
+        {"tag": "diff_DPDPDW",
+         "patterns": ["What are the differences between Data Processing, Data Preprocessing and Data Wrangling?", "Data Processing, Data Preprocessing and Data Wrangling", "differences between Data Processing, Data Preprocessing and Data Wrangling"],
+         "responses": ["Data Processing is a mission of converting data from a given form to a more usable and desired form. Data Preprocessing is a technique which is used to convert the raw data set into a clean data set. Data Wrangling is a technique which is performed at the time of making an interactive model."],
+         "context": [""]
+        }, 
+        {"tag": "building_a_model",
+         "patterns": ["What are the three stages of building a model in Machine Learning?", "What are the stages of building a model in Machine Learning?", "stages of building a model in Machine Learning", "building a model in Machine Learning"],
+         "responses": ["Model Building: Choose a suitable algorithm for the model and train it according to the requirement. Model Testing: Check the accuracy of the model through the test data. Applying the Model: Make the required changes after testing and use the final model for real-time projects."],
+         "context": [""]
+        },
+        {"tag": "choose_algo",
+         "patterns": ["How Will You Know Which Machine Learning Algorithm to Choose for Your Classification Problem?", "Which Machine Learning Algorithm to Choose for Your Classification Problem?"],
+         "responses": ["If accuracy is a concern, test different algorithms and cross-validate them. If the training dataset is small, use models that have low variance and high bias. If the training dataset is large, use models that have high variance and little bias."],
+         "context": [""]
+        }, 
+        {"tag": "BiasML",
+         "patterns": ["What is Bias in a Machine Learning Model?", "Bias in a Machine Learning Model", "Bias in a ML"],
+         "responses": ["Bias in a machine learning model occurs when the predicted values are further from the actual values."],
+         "context": [""]
+        },
+        {"tag": "Variance",
+         "patterns": ["What is Variance in a Machine Learning Model?", "Variance in a Machine Learning Model", "Variance"],
+         "responses": ["Variance refers to the amount the target model will change when trained with different training data. For a good model, the variance should be minimized."],
+         "context": [""]
+        },
+        {"tag": "ML_DL",
+         "patterns": ["What Are the Differences Between Machine Learning and Deep Learning?", "Differences Between Machine Learning and Deep Learning", "Machine Learning and Deep Learning"],
+         "responses": ["ML enables machines to take decisions on their own, based on past data. It needs only a small amount of data for training. Works well on the low-end system, so you don't need large machines. Most features need to be identified in advance and manually coded. The problem is divided into two parts and solved individually and then combined whereas DL enables machines to take decisions with the help of artificial neural networks. It needs a large amount of training data. Needs high-end machines because it requires a lot of computing power. The machine learns the features from the data it is provided. The problem is solved in an end-to-end manner."],
+         "context": [""]
+        },
+        {"tag": "Prec_Rec",
+         "patterns": ["Define Precision and Recall", "Precision and Recall", "What are Precision and Recall?"],
+         "responses": ["Precision is the ratio of several events you can correctly recall to the total number of events you recall (mix of correct and wrong recalls). Precision = (True Positive) / (True Positive + False Positive). A recall is the ratio of a number of events you can recall the number of total events. Recall = (True Positive) / (True Positive + False Negative)"],
+         "context": [""]
+        }, 
+        {"tag": "Para",
+         "patterns": ["What are parametric and non-parametric models?", "parametric and non-parametric models", "Define parametric and non-parametric models"],
+         "responses": ["Parametric models are those with a finite number of parameters. To predict new data, you only need to know the parameters of the model. Examples include linear regression, logistic regression, and linear SVMs. Non-parametric models are those with an unbounded number of parameters, allowing for more flexibility. To predict new data, you need to know the parameters of the model and the state of the data that has been observed. Examples include decision trees, k-nearest neighbors, and topic models using latent dirichlet analysis."],
+         "context": [""]
+        },  
+        {"tag": "SupLearn",
+         "patterns": ["What is supervised learning?", "supervised learning", "Define supervised learning"],
+         "responses": ["Supervised learning is a learning in which we teach or train the machine using data which is well labeled that means some data is already tagged with the correct answer. After that, the machine is provided with a new set of examples(data) so that supervised learning algorithm analyses the training data(set of training examples) and produces a correct outcome from labeled data."],
+         "context": [""]
+        }, 
+        {"tag": "types_SL",
+         "patterns": ["What are the types of supervised learning?", "types of supervised learning"],
+         "responses": ["Classification and Regression"],
+         "context": [""]
+        },  
+        {"tag": "Classification_algo",
+         "patterns": ["What are the classification algorithms", "classification algorithms"],
+         "responses": ["Logistic Regression, K-Nearest Neighbours, Support Vector Machines, Kernel SVM, Naïve Bayes, Decision Tree Classification, Random Forest Classification "],
+         "context": [""]
+        }, 
+        {"tag": "ClassDef",
+         "patterns": ["What is classification", "classification", "Define classification"],
+         "responses": ["It is a Supervised Learning task where output is having defined labels(discrete value)."],
+         "context": [""]
+        }, 
+        {"tag": "Eg_Class",
+         "patterns": ["Give an example of classification", "example of classification."],
+         "responses": ["Gmail classifies mails in more than one classes like social, promotions, updates, forum."],
+         "context": [""]
+        },     
+        {"tag": "Reg",
+         "patterns": ["What is regression", "regression", "Define regression"],
+         "responses": ["Regression is a supervised learning technique which helps in finding the correlation between variables and enables us to predict the continuous output variable based on the one or more predictor variables."],
+         "context": [""]
+        },
+        {"tag": "Reg_Eg",
+         "patterns": ["Give examples of regression.", "examples of regression."],
+         "responses": ["Prediction of rain using temperature and other factors, Determining Market trends, Prediction of road accidents due to rash driving."],
+         "context": [""]
+        },
+        {"tag": "Class_Tasks",
+         "patterns": ["What are the four types of classification tasks in Machine Learning?", "types of classification tasks in Machine Learning", "classification tasks in Machine Learning"],
+         "responses": ["Binary Classification, Multi-Class Classification, Multi-Label Classification, Imbalanced Classification"],
+         "context": [""]
+        },
+        {"tag": "BinaryClass",
+         "patterns": ["What is Binary Classification?", "Binary Classification", "Define Binary Classification"],
+         "responses": ["Binary classification refers to those classification tasks that have two class labels."],
+         "context": [""]
+        }, 
+        {"tag": "distributionBC",
+         "patterns": ["Which distribution is used commonly to model a binary classification task?", "distribution that is commonly used to model a binary classification task"],
+         "responses": ["It is common to model a binary classification task with a model that predicts a Bernoulli probability distribution for each example. The Bernoulli distribution is a discrete probability distribution that covers a case where an event will have a binary outcome as either a 0 or 1."],
+         "context": [""]
+        }, 
+        {"tag": "pop_algo",
+         "patterns": ["What are the popular algorithms that can be used for binary classification", "popular algorithms that can be used for binary classification"],
+         "responses": ["Logistic Regression, k-Nearest Neighbors, Decision Trees, Support Vector Machine, Naive Bayes"],
+         "context": [""]
+        },
+        {"tag": "MCC",
+         "patterns": ["What is Multi-Class Classification?", "Define Multi-Class Classification", "Multi-Class Classification"],
+         "responses": ["Multi-class classification refers to those classification tasks that have more than two class labels."],
+         "context": [""]
+        },
+        {"tag": "distrbutionMC",
+         "patterns": ["Which probability distribution is commonly used for modelling a multi-class classification task?", "probability distribution that is commonly used for modelling a multi-class classification task"],
+         "responses": ["It is common to model a multi-class classification task with a model that predicts a Multinoulli probability distribution"],
+         "context": [""]
+        },         
+        {"tag": "Pop_algoMC",
+         "patterns": ["Which are the popular algorithms that can be used for multi-class classification?", "popular algorithms that can be used for multi-class classification"],
+         "responses": ["k-Nearest Neighbors, Decision Trees, Naive Bayes, Random Forest, Gradient Boosting"],
+         "context": [""]
+        },
+        {"tag": "MLC",
+         "patterns": ["What is Multi-Label Classification?", "Multi-Label Classification", "Define Multi-Label Classification"],
+         "responses": ["Multi-label classification refers to those classification tasks that have two or more class labels, where one or more class labels may be predicted for each example."],
+         "context": [""]
+        },
+        {"tag": "imbalanced_classification",
+         "patterns": ["What do you mean by imbalanced classification?", "imbalanced classification", "Define imbalanced classification"],
+         "responses": ["Imbalanced classification refers to classification tasks where the number of examples in each class is unequally distributed."],
+         "context": [""]
+        },
+        {"tag": "use_reg",
+         "patterns": ["Why do we use regression analysis?", "use of regression analysis"],
+         "responses": ["Regression analysis helps in the prediction of a continuous variable. There are various scenarios in the real world where we need some future predictions such as weather condition, sales prediction, marketing trends, etc., for such case we need some technology which can make predictions more accurately. So for such case we need Regression analysis which is a statistical method and used in machine learning and data science."],
+         "context": [""]
+        },
+        {"tag": "types_reg",
+         "patterns": ["What are the types of regression?", "types of regression"],
+         "responses": ["Linear Regression, Logistic Regression, Polynomial Regression, Support Vector Regression, Decision Tree Regression, Random Forest Regression, Ridge Regression, Lasso Regression"],
+         "context": [""]
+        },
+        {"tag": "func_SL",
+         "patterns": ["What are the functions of supervised learning?", "functions of supervised learning"],
+         "responses": ["Classification, Speech Recognition, Regression, Predict Time Series, Annotate Strings"],
+         "context": [""]
+        },
+        {"tag": "standard_approach",
+         "patterns": ["What according to you, is the standard approach to supervised learning?", "standard approach to supervised learning"],
+         "responses": ["In supervised learning, the standard approach is to split the set of example into the training set and the test."],
+         "context": [""]
+        },
+        {"tag": "classifier",
+         "patterns": ["Describe the classifier in machine learning", "classifier", "classifier in machine learning"],
+         "responses": ["A classifier is a case of a hypothesis or discrete-valued function which is used to assign class labels to particular data points. It is a system that inputs a vector of discrete or continuous feature values and outputs a single discrete value, the class."],
+         "context": [""]
+        },
+        {"tag": "SVM",
+         "patterns": ["What is SVM in machine learning?", "SVM in machine learning", "Define SVM in machine learning", "Support vector machine"],
+         "responses": ["SVM stands for Support Vector Machine. SVM are supervised learning models with an associated learning algorithm which analyze the data used for classification and regression analysis"],
+         "context": [""]
+        },
+        {"tag": "meth_SVM",
+         "patterns": ["What are the classification methods that SVM can handle?", "classification methods that SVM can handle"],
+         "responses": ["Combining binary classifiers, Modifying binary to incorporate multiclass learning"],
+         "context": [""]
+        },
+        {"tag": "Confusion_Matrix",
+         "patterns": ["What do you understand by the Confusion Matrix?", "Meaning of Confusion Matrix", "What is Confusion Matrix?", "Confusion Matrix"],
+         "responses": ["A confusion matrix is a table which is used for summarizing the performance of a classification algorithm. It is also known as the error matrix."],
+         "context": [""]
+        },
+        {"tag": "Exp_TP_TN_FP_FN",
+         "patterns": ["Explain True Positive, True Negative, False Positive, and False Negative in Confusion Matrix", "Explain True Positive, True Negative, False Positive, and False Negative", "Explain True Positive", "Explain True Negative", "Explain False Positive", "Explain False Negative"],
+         "responses": ["When a model correctly predicts the positive class, it is said to be a true positive. When a model correctly predicts the negative class, it is said to be a true negative. When a model incorrectly predicts the positive class, it is said to be a false positive. It is also known as 'Type I' error. When a model incorrectly predicts the negative class, it is said to be a false negative. It is also known as 'Type II' error."],
+         "context": [""]
+        },
    ]
 }
