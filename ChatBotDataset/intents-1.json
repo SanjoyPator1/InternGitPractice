@@ -1,0 +1,78 @@
+{"intents": [
+	{"tag": "kernel SVM",
+         "patterns": ["defnition of kernel SVM", "what do you mean by kernel SVM", "what is the meaning of kernel SVM","kernel SVM"],
+         "responses": ["Kernel SVM is the abbreviated version of kernel support vector of machine. Kernel methods are a class of algorithms for pattern analysis and the most common one of the kernel SVM."],
+         "context": [""]
+        },
+	{"tag": "Recommended Systems",
+         "patterns": ["defnition of Recommended Systems", "what do you mean by Recommended Systems", "what is the meaning of Recommended Systems","Recommended Systems"],
+         "responses": ["Recommended Systems is a sub directory of information filtering systems, which predicts the preference or rankings offered by a user to a product. Recommendations are widely used in movies, news, research articles, products, social tips, music, etc."],
+         "context": [""]
+        },
+	{"tag": "Overfitting in laymen term",
+         "patterns": ["defnition of Overfitting in laymen term", "what do you mean by Overfitting in laymen term", "what is the meaning of Overfitting in laymen term","Overfitting in laymen term"],
+         "responses": ["Overfitting is a problem occurred when we have low error in the training set. But produces high error in test or unseen data."],
+         "context": [""]
+        },
+	{"tag": "Underfitting in laymen term",
+         "patterns": ["defnition of Underfitting in laymen term", "what do you mean by Underfitting in laymen term", "what is the meaning of Underfitting in laymen term","Underfitting in laymen term"],
+         "responses": ["Underfitting is a problem, when we have low error in both training set and the testing set. Few algorithms works better for interpretations. But fails for better predictions."],
+         "context": [""]
+        },
+	{"tag": "Curse of dimensionality",
+         "patterns": ["defnition of Curse of dimensionality", "what do you mean by Curse of dimensionality", "what is the meaning of Curse of dimensionality","Curse of dimensionality"],
+         "responses": ["COD is state which is commonly referred to lack of intuitive understanding of multiple dimensions. If a user wants to produce better understanding on data COD will make limitations."],
+         "context": [""]
+        },
+	{"tag": "data normalization",
+         "patterns": ["defnition of data normalization", "what do you mean by data normalization", "what is the meaning of data normalization","data normalization"],
+         "responses": ["Data normalization is a common practice to get the data features weighted equally. It causes to lose data interpretability."],
+         "context": [""]
+        },
+	{"tag": "clustering in short",
+         "patterns": ["defnition of clustering in short", "what do you mean by clustering in short", "what is the meaning of clustering in short","clustering in short"],
+         "responses": ["Clustering technique is a segmentation process. It works whenever we don’t have the target variable and still wanted to have a groups created."],
+         "context": [""]
+        },
+	{"tag": "EDA",
+         "patterns": ["defnition of EDA", "what do you mean by EDA", "what is the meaning of EDA","EDA"],
+         "responses": ["EDA which refers to Exploratory Data Analysis is a process to understand the data prior getting it into machine learning pipeline."],
+         "context": [""]
+        },
+	{"tag": "avoid Bias",
+         "patterns": ["avoid Bias", "how to avoid Bias", "avoiding Bias"],
+         "responses": ["Bias can cause to feel or show inclination or prejudice for or against someone or something. Avoiding bias in machine learning is very important, and the last thing we would want is to create a model which will most of the times/always classify a non-defective product as a defective one."],
+         "context": [""]
+        },
+	{"tag": "Z Score",
+         "patterns": ["defnition of Z Score", "what do you mean by Z Score", "what is the meaning of Z Score","Z Score"],
+         "responses": ["The z-score is the standard distortion count from a data point on average. But technically this is a source of how many constant changes are above or above the population. A z-score is known as a fixed value and can be placed in a normal distribution ramp. It eliminates values from the database that are lower than Z times 3 times."],
+         "context": [""]
+        },
+	{"tag": "odds ratio",
+         "patterns": ["defnition of odds ratio", "what do you mean by odds ratio", "what is the meaning of odds ratio","odds ratio"],
+         "responses": ["The odds ratio is the odds within two groups. For example, let’s pretend that we are trying to determine the effectiveness of medicine. We administered the medication to the ‘intervention’ organization and a position to the ‘control’ group."],
+         "context": [""]
+        },
+	{"tag": "classification problems",
+         "patterns": ["Why is accuracy not a good model for classification problems", "classification problems"],
+         "responses": ["Accuracy is not a good basis for distribution problems because it provides equal significant value to both false positives and false negatives dataset value. Accuracy provides equal quality to both cases and cannot distinguish between them."],
+         "context": [""]
+        },
+	{"tag": "trade-off between accuracy and interpretability",
+         "patterns": ["compromise between accuracy and interpretability", "trade-off between accuracy and interpretability"],
+         "responses": ["There needs to be a trade-off between accuracy and interpretability. Neural networks spit out the best possible result, and we can’t ignore that just because we don’t understand the internal functioning of the model."],
+         "context": [""]
+        },
+	{"tag": "missing data",
+         "patterns": ["missing data", "Is missing data is just blanks", "Is blanks is just missing data","does blanks is just missing data"],
+         "responses": ["No. Not only the blanks, data points which has NA, NULL and also sometimes the corrupted data that has been recorded by mistake or given improper data by purpose."],
+         "context": [""]
+        },
+	{"tag": "gradient descent methods converge",
+         "patterns": ["gradient descent methods converge", "do gradient descent methods converge to same point"],
+         "responses": ["No, they do not because in some cases it reaches an local minima or a local optima points. You don’t reach to the global optima point. It depends on the data and starting the conditions."],
+         "context": [""]
+        }
+   ]
+}
